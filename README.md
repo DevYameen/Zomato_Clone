@@ -1,3 +1,4 @@
+![Zomato_Clone - Google Chrome 07-11-2023 21_12_36](https://github.com/DevYameen/Zomato_Clone/assets/147266705/ac36ec77-5f37-4e69-a306-58aaaf40451b)
 ZOMATO CLONE
 # HTML, CSS, JS (Auto Refresh)
 
