@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- zomato logo in the tab -->
+  <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- poppins font by google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <title>Zomato_Clone</title>
+  <style>
+    /* CSS for basic form styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: black;
+    }
+
+    .signup-form {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+
+    .signup-form input[type="text"],
+    .signup-form input[type="email"],
+    .signup-form input[type="fullname"] {
+
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .signup-form input[type="submit"] {
+      width: auto;
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+
+    .signup-form input[type="submit"]:hover {
+      background: #2980b9;
+    }
+
+    .cut-button {
+      position: absolute;
+      top: 55px;
+      right: 550px;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    .cut-button:hover {
+      background-color: #ff473a;
+      /* Darker coral color */
+    }
+
+    /* CSS for the button */
+    .create-account-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .create-account-btn:hover {
+      background-color: #D3D3D3;
+      color: white;
+    }
+
+    /* Style to create an gmail button */
+    .gmail-button {
+      margin: 8px;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border-color: #D3D3D3;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Style for the gmail icon */
+    .gmail-icon {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="signup-form">
+    <h2>Sign Up</h2>
+    <a href="./index.html" class="cut-button">X</a>
+    <form action="your_signup_handler.php" method="post">
+      <input type="fullname" id="fullname" name="full name" placeholder="Full Name" required>
+
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="checkbox" id="agree" name="agree" value="agreed" required>
+      <label for="agree">I agree to Zomato's <a href="#">Terms of Service</a>, <a href="#">Privacy Policy</a>, and <a
+          href="#">Content Policies</a></label><br><br>
+
+      <a href="./signup.html" class="create-account-btn">Create Account</a>
+      <h4>--------------------------------or---------------------------------</h4>
+      <button tpye="gmail-button" class="gmail-button">
+        <img class="gmail-icon" src="./images/gmail.png" alt="Gmail Icon">
+        Continue with Gmail
+      </button>
+      <div class="login">
+        <h4>Already have an account?</h4>
+        <a style="color: red;" href="./login.html">Log in</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
