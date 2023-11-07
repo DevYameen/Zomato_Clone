@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- zomato logo in the tab -->
+  <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Zomato_logo.png/220px-Zomato_logo.png" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- poppins font by google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+
+  <title>Zomato_Clone</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .login-container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: white;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="tel"],
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .login-container input[type="submit"] {
+      background: #3498db;
+      color: white;
+      cursor: pointer;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background: #2980b9;
+    }
+
+    .email-button {
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border-color: #D3D3D3;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Style for the email icon */
+    .email-icon {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    /* Style to create an gmail button */
+    .gmail-button {
+      margin: 8px;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border-color: #D3D3D3;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Style for the gmail icon */
+    .gmail-icon {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .cut-button {
+      position: absolute;
+      top: 110px;
+      right: 600px;
+      background-color: white;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    .cut-button:hover {
+      background-color: #ff473a;
+      /* Darker coral color */
+      /* Style to create an email button */
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <a href="./index.html" class="cut-button">X</a>
+    <form action="your_login_handler_page.php" method="post">
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="E.g. +919305595655" required>
+      <button
+        style="background-color: red; margin:2px; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;"
+        onmouseover="this.style.backgroundColor='darkred'" onmouseout="this.style.backgroundColor='red'">Send One Time
+        password</button>
+      <h4>---------------------or---------------------</h4>
+      <button class="email-button">
+        <img class="email-icon" src="./images/email.jpg" alt="Email Icon">
+        Continue with Email
+      </button>
+      <button class="gmail-button">
+        <img class="gmail-icon" src="./images/gmail.png" alt="Gmail Icon">
+        Continue with Gmail
+      </button>
+      <h6>________________________________________________</h6>
+      <div class="new">
+        <h4>New to Zomato? </h4>
+        <a style="color: red;" href="./signup.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
